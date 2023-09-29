@@ -12,7 +12,7 @@ basic.pause(1000)
 pins.digitalWritePin(DigitalPin.P16, 0)
 
 // Pin on
-input.onButtonPressed(Button.A, function() {
+input.onButtonPressed(Button.A, function () {
   pins.digitalWritePin(DigitalPin.P16, 1)
   basic.showIcon(IconNames.Yes)
 })

@@ -6,16 +6,16 @@ This module is a Micro:bit MicroPython program
 
 from microbit import *
 
-// setup
+"setup"
 display.clear()
 display.show(Image.HEART)
 
-while true:
-    // on
+while True:
+    "on"
     if button_a.is_pressed():
         pin16.write_digital(1)
-        display.show(image.YES)
-    // off
+        display.show(Image.YES)
+    "off"
     if button_b.is_pressed():
         pin16.write_digital(0)
-        display.show(image.NO)
+        display.show(Image.NO)
